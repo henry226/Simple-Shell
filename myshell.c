@@ -38,8 +38,6 @@ int main() {
 		// Get the input
 		if(!fgets(line, BUFFER_LEN, stdin))
 	    		break;
-		//printf("%s", line);
-		
 
 		// Take out all line breaks
 		size_t length = strlen(line);
@@ -50,30 +48,27 @@ int main() {
 		// Exit commend
 		if(strcmp(line, "exit")==0) {            
 			break;
-	    	}
+	    }
 
-	
 		// Seperate lines into tokens
 		token = strtok(line," ");
-		//printf("%s\n", token);
+		
 		int i=0;
 		while(token!=NULL){
 			argv[i]=token; 
-   			p = strchr(token, ch);
-			//printf("%s\n", token);     
+   			p = strchr(token, ch);   
 			if(p) {	
 
 			}
 			else {
 				strcpy(history[history_counter], token);
-				//printf("%s\n", history[history_counter]);
 				history_counter++; 
 			}
 
 			token = strtok(NULL," ");
 			i++;
 			
-	    	}
+	    }
 
 		
 		argv[i]=NULL;
@@ -82,40 +77,31 @@ int main() {
 		
 		//Set Counter
 		int counter = i;
-
-		for(i=0; i<counter; i++){
-        		//printf("%s\n", *argv);     
-    		}
 		
-		//printf("find %s\n", &argv[0][0]);
 		p = strchr(argv[0], ch);
 		
 		if(strcmp(argv[0],"!!") == 0){
-			//printf("history: %s\n", history[history_counter-1]);
 			strcpy(argv[0], history[history_counter-1]);
 		}
 		else if(p) {
-			//printf("Find !\n");
 			if(strcmp(argv[0],"!") == 0) {
 				printf("!: commend not found\n");
 				continue;
 			}
 			else {
-			argv[0] = strtok(argv[0], "!");
-			//printf("%s\n", argv[0]);
-			toNum = atoi(argv[0]) - 1;
-			if(toNum > history_counter) {
-				strcpy(argv[0], "-100");
-			}
-			else
-				strcpy(argv[0], history[toNum]);
+				argv[0] = strtok(argv[0], "!");
+				toNum = atoi(argv[0]) - 1;
+				if(toNum > history_counter) {
+					strcpy(argv[0], "-100");
+				}
+				else
+					strcpy(argv[0], history[toNum]);
 			}
 		}
 
 		
 
 		if(strcmp(argv[0],"help") == 0 || strcmp(argv[0],"cd") == 0 || strcmp(argv[0],"users") == 0 || strcmp(argv[0],"history") == 0) {
-			//printf("2\n");
 			if(strcmp(argv[0],"help") == 0)
 				help_fun();
 
@@ -129,9 +115,9 @@ int main() {
 
 			if(strcmp(argv[0],"users") == 0)
 				users();
+			
 			if(strcmp(argv[0],"history") == 0) {
 				for(n=0; n<history_counter; n++)
-					//printf("%s", history[n]);
 					show_hisotry(history[n]);
 			}
 		}
@@ -141,15 +127,14 @@ int main() {
 		}
 		else {
 			system_fork(argv);
-			//printf("2\n");
 		}
 
 	}
 	
 }
 
-int system_fork(char **args)
-{
+int system_fork(char **args){
+  
   pid_t pid, wpid;
   int status;
 
@@ -175,7 +160,7 @@ int change_dir(char * arg) {
 	return 1;
 }
 
-void help_fun()  {
+void help_fun() {
 	printf("Meng-Tse Li's Shell\n");
 	printf("The following are built in:\n");
 	printf("cd\n");
