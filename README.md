@@ -12,10 +12,7 @@ users
 history
 !!
 !n
-```
-
----
-
+```  
 ### 2. External command “ls” and internal command “cd” to see and change my file directory.
 ```sh
 ML>> ls
@@ -24,19 +21,13 @@ ML>> cd ../
 ML>> ls
 Desktop Documents Downloads examples.desktop hello hello.c hi Makefile Music myshell myshell.c Pictures Public
 shell shell.c Templates text text.c Video
-```
-
----
-
+```  
 ### 3. “users” command to see the user.
 ```sh
 ML>> users
 The user is: henry
 ML>>
-```
-
----
-
+```  
 ### 4. “history” command to see all the commands I did in the past.
 ```sh
 ML>> history
@@ -53,5 +44,3 @@ clear
 history
 ML>>
 ```
-
----
