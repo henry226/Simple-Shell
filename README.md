@@ -1,6 +1,6 @@
 # Simple-Shell
 
-### 1. The first internal command I did was “help” to see what the internal commands are.  
+### 1. Internal commant “help” to see what the internal commands are.  
 ```sh
 ML>> help
 Meng-Tse Li's Shell
@@ -14,7 +14,9 @@ history
 !n
 ```
 
-### 2. Then I do external command “ls” and internal “cd” to see and change my file directory.
+---
+
+### 2. External command “ls” and internal command “cd” to see and change my file directory.
 ```sh
 ML>> ls
 Makefile myshell myshell.c
@@ -24,9 +26,26 @@ Desktop Documents Downloads examples.desktop hello hello.c hi Makefile Music mys
 shell shell.c Templates text text.c Video
 ```
 
-### 3. Then I use “users” command to see the user.
+### 3. “users” command to see the user.
 ```sh
 ML>> users
 The user is: henry
+ML>>
+```
+
+### 4. “history” command to see all the commands I did in the past.
+```sh
+ML>> history
+ls
+cd ../
+ls
+help
+clear
+users
+history 
+clear
+history
+clear
+history
 ML>>
 ```
