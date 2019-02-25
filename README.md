@@ -23,3 +23,10 @@ ML>> ls
 Desktop Documents Downloads examples.desktop hello hello.c hi Makefile Music myshell myshell.c Pictures Public
 shell shell.c Templates text text.c Video
 ```
+
+### 3. Then I use “users” command to see the user.
+```sh
+ML>> users
+The user is: henry
+ML>>
+```
