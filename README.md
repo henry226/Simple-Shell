@@ -26,12 +26,16 @@ Desktop Documents Downloads examples.desktop hello hello.c hi Makefile Music mys
 shell shell.c Templates text text.c Video
 ```
 
+---
+
 ### 3. “users” command to see the user.
 ```sh
 ML>> users
 The user is: henry
 ML>>
 ```
+
+---
 
 ### 4. “history” command to see all the commands I did in the past.
 ```sh
@@ -49,3 +53,5 @@ clear
 history
 ML>>
 ```
+
+---
