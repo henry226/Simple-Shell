@@ -1,4 +1,4 @@
-# Simple-Shell
+# Final Project: Simple Shell Porgram
 
 ### 1. Internal commant “help” to see what the internal commands are.  
 ```sh
