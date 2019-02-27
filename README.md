@@ -44,3 +44,31 @@ clear
 history
 ML>>
 ```
+### 5. “!!” command which executes the last command I had executed. In this case, the last command I did was “history”.
+```sh
+ML>> history
+ls
+cd ../
+ls
+help
+clear
+users
+history 
+clear
+history
+clear
+history
+ML>> !!
+ls
+cd ../
+ls
+help
+clear
+users
+history 
+clear
+history
+clear
+history
+ML>>
+```
