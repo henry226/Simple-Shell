@@ -72,7 +72,7 @@ clear
 history
 ML>>
 ```
-6. “n5” to execute the fifth command I did in the past. In this case is “help” command.
+### 6. “n5” to execute the fifth command I did in the past. In this case is “help” command.
 ```sh
 ML>> !5
 Meng-Tse Li's Shell
