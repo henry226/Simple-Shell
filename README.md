@@ -86,7 +86,7 @@ history
 !n
 ML>>
 ```
-### 6. “!100” command, it will give user error message if user did not use 100 commands in the past yet. In addition, random “hsa” command will gave user command not found message because it doesn’t belong to any commands.
+### 7. “!100” command, it will give user error message if user did not use 100 commands in the past yet. In addition, random “hsa” command will gave user command not found message because it doesn’t belong to any commands.
 ```sh
 ML>> !100
 Error, mot in the hisotry list.
