@@ -93,3 +93,7 @@ Error, mot in the hisotry list.
 ML>> hsa
 has: command not found.
 ```
+### 8. “exit” command which out the program.
+```sh
+ML>> exit
+```
