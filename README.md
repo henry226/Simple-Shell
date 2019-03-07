@@ -86,14 +86,17 @@ history
 !n
 ML>>
 ```
-### 7. “!100” command, it will give user error message if user did not use 100 commands in the past yet. In addition, random “hsa” command will gave user command not found message because it doesn’t belong to any commands.
+### 7. “!100” command, it will give user error message if user did not use 100 commands in the past yet.
 ```sh
 ML>> !100
 Error, mot in the hisotry list.
+```
+### 8. Random “hsa” command will gave user command not found message because it doesn’t belong to any commands.
+```sh
 ML>> hsa
 has: command not found.
 ```
-### 8. “exit” command which out the program.
+### 9. “exit” command which out the program.
 ```sh
 ML>> exit
 ```
